@@ -23,5 +23,8 @@ This requires some extra work over and above a normal JAR import to get it all w
 
 ## Results
 
-(wip)
+Results in a 30+% reduction in compression time for the same quality level.
+
+Proper benchmark results pending.
+
 
