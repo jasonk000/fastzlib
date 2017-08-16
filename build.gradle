@@ -1,0 +1,29 @@
+plugins {
+  id 'me.champeau.gradle.jmh' version '0.4.4'
+}
+
+group 'com.bluedevel.zlib'
+version '0.0.1'
+
+apply plugin: 'java'
+apply plugin: 'me.champeau.gradle.jmh'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+  testCompile group: 'commons-io', name: 'commons-io', version: '2.5'
+}
+
+repositories {
+  mavenCentral()
+}
+
+jmh {
+  include = '.*Benchmark*.*'
+  jmhVersion = '1.19'
+  jvmArgsAppend = '-Xmx1g'
+  profilers = []
+}
+
+
