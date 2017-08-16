@@ -25,10 +25,10 @@ This requires some extra work over and above a normal JAR import to get it all w
 
 Results in a doubling of compression throughput using Cloudflare libraries vs standard JVM libraries.
 
-`
+```
 Benchmark                              Mode  Cnt   Score   Error  Units
 BenchmarkCompressors.compressFastJvm  thrpt    5  43.760 ± 5.566  ops/s
 BenchmarkCompressors.compressJvm      thrpt    5  19.533 ± 2.931  ops/s
-`
+```
 
 
